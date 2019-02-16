@@ -1,12 +1,8 @@
 body {
-  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: #777777; */
+
   background: url("../images/background.jpeg");
   height: 100%; 
   
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +20,7 @@ html {
     position: relative;
  
     top:  18%;
-    /* width: 100%; */
+  
     text-align: center;
     opacity: 0.75;
     width: 900px;
@@ -58,11 +54,18 @@ html {
 #footer{
   position: relative;
 }
+#nav-right {
+  margin: 0px; 
+  float: right;
+}
+#nav-container {
+  margin: 0;
+}
 
 
 /* Responsive media screens */
 @media screen and (max-width: 980px) {
-    .container {
+    #nav-container {
     width: 100%;
     max-width: 875px;
     margin: 0 auto;
@@ -71,7 +74,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    #nav-container {
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
@@ -82,7 +85,7 @@ html {
 
 
 @media screen and (max-width: 640px) {
-    .container {
+    #nav-container {
     width: 100%;
     max-width: 550px;
     margin: 0 auto;
