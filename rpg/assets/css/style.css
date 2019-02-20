@@ -1,0 +1,94 @@
+@font-face {
+  font-family: '80sFont';
+  src: url('still_time.ttf');
+}
+body {
+    background-color: black;
+}
+#title-text-container {
+    width: 800px;
+
+}
+h1 {
+    font-family: '80sFont';
+    font-size: 85px;
+    color: #5aebad;
+    margin: 0;
+}
+h1 sup {
+    font-size: 45px;
+    color: #FF0000
+}
+h2 {
+    color: white;
+}
+
+#main-body {
+    margin: auto;
+    max-width: 1024px;
+}
+#jumbo-container {
+    background-image: url("../images/f14.jpg");
+}
+#character-select-container {
+    width: 100; 
+}
+.character-selection-img {
+    height: 100px;
+    
+    float: left;
+    padding-right: 25px;
+}
+
+.button-style {
+    height: 100px;
+    width: 150px;
+}
+
+.character-btn {
+    margin-right: 20px;
+}
+
+.character-icons {
+    
+    width: 50%;
+    /* height: 50%; */
+}
+.enemy-character {
+    width: 100%;
+}
+.fighter-section-icons {
+    width: 40%;
+}
+#attack-button {
+    background-color: red;
+    color: black;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+}
+.enemy-div {
+    width: 33%;
+    float: left;
+    color: white;
+}
+.enemy-info {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+@media only screen and (max-width: 600px) {
+    .character-icons {
+        width:100%;
+    }
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    #main-body {
+        width: 360px;
+    }
+}
