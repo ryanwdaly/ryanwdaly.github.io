@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-color: black;
+    /* width: 940px; */
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+.row {
+    margin: auto;
+}
+#title {
+    font-family: 'Press Start 2P';
+    color: gold;
+   
+    float: none; 
+    margin: auto;
+    font-size: 60px;
+}
+#progress-display {
+    font-family: 'Press Start 2P';
+    float: none; 
+    margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: white;
+    margin-top: 150px;
+}
+#guesses-left {
+   
+    /* position: relative; */
+    font-family: 'Press Start 2P';
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    float: left;
+    
+}
+#guessed-letters {
+    
+    
+    font-family: 'Press Start 2P';
+   
+    color: white;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* .guessed {
+    margin-left: 10px;
+    float: right;
+    letter-spacing: 10px;
+} */
+
+@media only screen and (max-width : 320px) {
+    #progress-display {
+        /* font-size: 10px;
+        margin: auto; */
+    }
+
+}
