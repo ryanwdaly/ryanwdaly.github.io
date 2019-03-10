@@ -11,7 +11,8 @@
 </head>
 
 <body>
-  <nav> 
+  <!-- Navbar -->
+  <nav>
     <div class="logo">
       <h4>Ryan W Daly</h4>
     </div>
@@ -29,49 +30,27 @@
     <div class="nav-mobile">
       <div class="line1"> </div>
       <div class="line2"> </div>
-      <div class="line3"> </div>  
+      <div class="line3"> </div>
     </div>
   </nav>
 
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el" width="720" height="416"></canvas>
+  </div>
+
   <script src="assets/javascript/script.js"></script>
-</body>  
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', './assets/particles.json', function(){
+    console.log('particles.json loaded...');
+  });
+  </script>
+</body>
+
 </html>
 
 
-  
-                <!-- <a class="dropdown-item" href="rpg/index.html">Top Gun Game</a>
+
+<!-- <a class="dropdown-item" href="rpg/index.html">Top Gun Game</a>
                 <a class="dropdown-item" href="dbz_gifs/index.html">DBZ Gifs</a>
                 <a class="dropdown-item" href="retro_hangman/index.html">Hangman</a> -->
- 
-
-
-
-
-
-
-
-
-
-
-<!-- Main -->
-<!-- <div class="container" id='main-container'>
-  <h1 id="ryanwdaly" class="center-text">RYANWDALY.IO</h1>
-  <p id="description" class="center-text">Hello, I'm Ryan Daly, a two-time PCT thu-hiker and aspiring full stack 
-    developer <br>currently learning web developing basics at the UNH Bootcamp.
-  </p>
-  <br>
-  
-</div>
-
-<footer class="page-footer font-small fixed-bottom">
-
-
-  <div class="footer-copyright text-center py-3" id="footer">©2019 Copyright: Ryan Daly
-    
-  </div>
-
-
-</footer>
-</body>
-
-</html>  -->

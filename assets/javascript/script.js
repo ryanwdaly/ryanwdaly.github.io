@@ -12,7 +12,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`; //Use of backticks!!!!
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.3}s`; //Use of backticks!!!!
             }
         });
 
@@ -20,6 +20,9 @@ const navSlide = () => {
         navMobile.classList.toggle('toggle')
     });
 }
+
+
+
 
 navSlide();
 //Use this style to keep it cleaner
