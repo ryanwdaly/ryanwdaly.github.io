@@ -44,12 +44,12 @@ const textToParticles = () => {
             x: x,
             y: y
         };
-        this.r = Math.random() * 2 + 1; //size
+        this.r = Math.random() * 0.5 + 1; //size
         this.vx = (Math.random() - 0.5) * 20;
         this.vy = (Math.random() - 0.5) * 20;
         this.accX = 0;
         this.accY = 0;
-        this.friction = Math.random() * 0.05 + 0.94;
+        this.friction = Math.random() * 0.005 + 0.94;
 
         this.color = "#FFFFFF"
     }
@@ -57,8 +57,8 @@ const textToParticles = () => {
     Particle.prototype.render = function () {
 
 
-        this.accX = (this.dest.x - this.x) / 2000;
-        this.accY = (this.dest.y - this.y) / 2000;
+        this.accX = (this.dest.x - this.x) / 1000;
+        this.accY = (this.dest.y - this.y) / 1000;
         this.vx += this.accX;
         this.vy += this.accY;
         this.vx *= this.friction;
@@ -70,6 +70,7 @@ const textToParticles = () => {
         ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
+
         ctx.fill();
 
         var a = this.x - mouse.x;
@@ -117,8 +118,8 @@ const textToParticles = () => {
         ctx.globalCompositeOperation = "screen";
 
         particles = [];
-        for (var i = 0; i < ww; i += Math.round(ww / 325)) {
-            for (var j = 0; j < wh; j += Math.round(ww / 325)) {
+        for (var i = 0; i < ww; i += Math.round(ww / 500)) {
+            for (var j = 0; j < wh; j += Math.round(ww / 500)) {
                 if (data[((i + j * ww) * 4) + 3] > 150) {
                     particles.push(new Particle(i, j));
                 }
@@ -164,10 +165,12 @@ const textToParticles = () => {
 
 const draw = () => {
     var canvas = document.getElementById("scene");
-    var ctx = canvas.getContext("2d")
+    var ctx = canvas.getContext("2d");
     ctx.font = "30px Arial";
-    ctx.fillText("Full-stack Developer", 10, 50);
-    ctx.fillSyle = "white"
+    ctx.fillSyle = "#000000";
+    ctx.color = "#000000";
+    ctx.textAlign = center;
+    ctx.fillText("Fullstack Developer", 10, 50);
 }
 
 
@@ -180,3 +183,5 @@ draw();
 //     navSlide();
 //      ..etc();
 // }
+
+

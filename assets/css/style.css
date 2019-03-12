@@ -1,3 +1,7 @@
+@font-face {
+  font-family: nasaFont;
+  src: url(../images/nasalization-rg.ttf);
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -90,14 +94,55 @@ canvas{
   position: absolute;
   /* background: black; */
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 
 }
 #particles-js {
   background: black;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+}
+#subtitle h2{
+  z-index: 10;
+  color: white;
+  
+}
+footer {
+
+  display: flex;
+  justify-content: space-around; /*Centers items in the middle*/
+  align-items: center; /*Centers items verticaly*/
+  
+  background-color: #121212;
+  font-family: 'Raleway', sans-serif;
+
+
+
+  display: flex;
+  justify-content: space-around; /*Centers items in the middle*/
+  align-items: center; /*Centers items verticaly*/
+  position: absolute;
+  top: 95vh;
+  height: 5vh;
+  width: 100vw; 
+  font-family: nasaFont;
+  background-color: black;
+  text-decoration: uppercase;
+  width: 100%
+
+}
+.footer-links {
+  width: 100%;
+  text-align: justify;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #E5E5E5;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 33%
 }
 @media screen and (min-width: 1024px){
   #featured-work li{
@@ -108,7 +153,7 @@ canvas{
   width: 33.3%;
   height: 25%;
 }
-  /* .nav-links{
+/* .nav-links{
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -145,7 +190,6 @@ canvas{
 .nav-active{
   transform: translateX(0%);
 }
-
 @keyframes navLinkFade{
   from{
     opacity: 0;
