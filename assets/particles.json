@@ -1,16 +1,23 @@
 {
     "particles":{
       "number":{
-        "value":100
+        "value":1500,
+        "density": {
+          "enable": true,
+          "value_area": 780
+        }
       },
       "color":{
-        "value":"#fff"
+        "value":"#ffffff"
       },
       "shape":{
         "type":"circle",
         "stroke":{
-          "width":1,
-          "color":"#ccc"
+          "width":0,
+          "color":"#00000"
+        },
+        "polygon": {
+          "nb_sides":5
         },
         "image":{
           "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
@@ -18,38 +25,49 @@
       },
       "opacity":{
         "value":0.5,
-        "random":true,
+        "random":false,
         "anim":{
-          "enable":false,
-          "speed":1
+          "enable":true,
+          "speed":1,
+          "opacity_min": 0,
+          "sync": false
         }
       },
       "size":{
         "value": 2,
         "random":true,
         "anim":{
-          "enable": false,
-          "speed":30
+          "enable": true,
+          "speed":1,
+          "size_min": 0,
+          "sync": false
         }
       },
       "line_linked":{
-        "enable": true,
-        "distance": 120,
+        "enable": false,
+        "distance": 750,
         "color":"#fff",
-        "width":0.1
+        "width":0.2
       },
       "move":{
         "enable":true,
         "speed":1,
         "direction":"none",
-        "straight":false
+        "straight":false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
     },
     "interactivity":{
       "events":{
         "onhover":{
           "enable":true,
-          "mode":"repulse"
+          "mode":"bubble"
         },
         "onclick":{
           "enable": true,
@@ -68,4 +86,3 @@
       }
     }
   }
-  

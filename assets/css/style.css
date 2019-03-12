@@ -12,10 +12,17 @@ nav{
   font-family: 'Raleway', sans-serif;
 }
 .logo{
-  color: #E5E5E5;
-  text-transform: uppercase;
   letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #E5E5E5;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
+}
+.logo a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: #E5E5E5;
+  text-decoration: none;
 }
 .nav-links{
   display: flex;
@@ -46,32 +53,70 @@ body,
 html {
   height: 100%;
 }
-#particles-js canvas {
-  display: block;
-  vertical-align: bottom;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-  transition: opacity .8s ease, transform 1.4s ease;
-  background-color: black;
-}
-#particles-js {
+
+
+
+
+#featured-work{
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -10;
   top: 0;
   left: 0;
+  background-color: #121212;
+  top: 8vh;
 }
-/* @media screen and (max-width: 1024px){
-  .nav-links{
+#featured-work ul{
+  list-style: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#featured-work li{
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 50%;
+  height: 25%
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+canvas{
+  position: absolute;
+  /* background: black; */
+  width: 100vw;
+  height: 100vh;
+
+}
+#particles-js {
+  background: black;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+@media screen and (min-width: 1024px){
+  #featured-work li{
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 33.3%;
+  height: 25%;
+}
+  /* .nav-links{
     display: flex;
     width: 50%;
     justify-content: space-around;
-  }
-} */
+  } */
+}
+
+
+
 @media screen and (max-width: 760px){
   body{
     overflow-x: hidden;
@@ -123,67 +168,3 @@ html {
 
 .toggle .line3{
   transform: rotate(45deg) translate(-6px,-6px);
-}
-
-
-
-
-
-
-/* body {
-
-  
-
-}
-
-
-#main-container {
-    position: relative;
- 
-    top:  18%;
-  
-    text-align: center;
-    opacity: 0.75;
-    width: 900px;
-}
-
-.center-text {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 28px;
-    letter-spacing: 10px;
-   
-
-}
-#ryanwdaly {
-  padding-top: 25px;
-  margin: auto;
-  padding-bottom: 0px;
-  width: 400px;
-  text-align: center;
-  
-
-}
-#description {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-#footer{
-  position: relative;
-}
-#nav-right {
-  margin: 0px; 
-  float: right;
-}
-#nav-container {
-  margin: 0;
-}
-
-
-
-
-}  */
