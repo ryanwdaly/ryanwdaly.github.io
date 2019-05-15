@@ -1,82 +1,59 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Ryan Daly's</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
- 
-
-<!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="index.html" id="logo">Ryan Daly</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">About</a>
-        </li>
-      </ul>
+    <div id="content">
+        <header>
+            <section>
+                <div id="myName">
+                    Ryan Daly
+                </div>
+                <nav>
+                    <div id="aboutButton" class="navButton">
+                        <a href="index.html">About</a>
+                    </div>
+                    <div id="portButton" class="navButton">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div id="contactButton" class="navButton">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <div id="bodyContent">
+            <section id="mainContent">
+                <h1>Contact</h1>
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Your Name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="example@yahoo.com"><br>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" id="myTextArea" cols="30" rows="10"></textarea><br>
+                    <input id="submitButton" type="submit" value="Submit">
+                </form>
+            </section>
+            <section id="sideBar">
+                    <h2>Connect With Me</h2>
+                    <h2><a href="https://github.com/ryanwdaly" class="socialIcon">Github</a></h2>
+                    <h2><a id="middleIcon" href="https://www.linkedin.com/feed/?trk=hb_signin"  class="socialIcon">Linked In</a></h2>
+                </section>
+        </div>
+        <!-- This is a blank div that is given the same height as the footer. This makes the body long enough to add in a footer without it overlapping content in the body. -->
+        <div class="push"></div>
     </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
-
-  <main class="container">
-    <section class="row">
-      <div class="col-md-8">
-        <form class="block form-horizontal">
-          <h1 class="block-header">Contact</h1>
-          <hr />
-          <div class="form-group">
-            <label for="name" class="col-sm-2 control-label">Name</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="name" placeholder="Name">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email" class="col-sm-2 control-label">Email</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="email" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="msg">Message</label>
-            <div class="col-sm-10">
-              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <button class="submit-btn">Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+    <footer>
+        <p id="copyright">
+            Footer
+        </p>
+    </footer>
 </body>
-
 </html>

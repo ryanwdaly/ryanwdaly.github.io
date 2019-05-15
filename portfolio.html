@@ -1,60 +1,93 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio | Ryan Daly</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Ryan Daly's Portfolio Pagex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <nav> 
-    <div class="logo">
-      <h4><a href="./index.html">Ryan W Daly</a></h4>
+    <!-- The entire content of the site except for the sticky footer -->
+    <div id="content">
+        <header>
+            <section>
+                <div id="myName">
+                    Ryan Daly
+                </div>
+                <nav>
+                    <div id="aboutButton" class="navButton">
+                        <a href="index.html">About</a>
+                    </div>
+                    <div id="portButton" class="navButton">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div id="contactButton" class="navButton">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <div id="bodyContent">
+            <section id="mainContent">
+                <h1>Portfolio</h1>
+                <div class="picSection">
+                    <div class="thumbnail left">
+                        <a href="https://nameless-cliffs-91202.herokuapp.com/">
+                            <img src="assets/images/machine.jpg" alt="example">
+                            <span class="label">Machine Learning</span>
+                        </a>
+                    </div>
+                    <div class="thumbnail right">
+                        <a href="https://fathomless-headland-57633.herokuapp.com/menu/menu.html">
+                            <img src="assets/images/burger.jpg" alt="example">
+                            <span class="label">Sequelized Burgers</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="picSection">
+                        <div class="thumbnail left">
+                            <a href="https://immense-refuge-65732.herokuapp.com/">
+                                <img src="assets/images/simpsons.jpg" alt="example">
+                                <span class="label">Friend Finder</span>
+                            </a>
+                        </div>
+                        <div class="thumbnail right">
+                            <a href="https://github.com/ryanwdaly/ruby_space_program">
+                                <img src="assets/images/saturnv.jpg" alt="example">
+                                <span class="label">Ruby Space Program</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="picSection">
+                        <div class="thumbnail left">
+                            <a href="dbz_gifs/index.html">
+                                <img src="assets/images/dbz.jpg" alt="example">
+                                <span class="label">DBZ Gifs</span>
+                            </a>
+                        </div>
+                        <div class="thumbnail right">
+                            <a href="rpg/index.html">
+                                <img src="assets/images/topgun.jpg" alt="example">
+                                <span class="label">Top Gun Game</span>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+            <section id="sideBar">
+                    <h2>Connect With Me</h2>
+                    <h2><a href="https://github.com/ryanwdaly" class="socialIcon">Github</a></h2>
+                    <h2><a id="middleIcon" href="https://www.linkedin.com/feed/?trk=hb_signin"  class="socialIcon">Linked In</a></h2>
+          </section>
+        </div>
+        <!-- This is a blank div that is given the same height as the footer. This makes the body long enough to add in a footer without it overlapping content in the body. -->
+        <div class="push"></div>
     </div>
-    <ul class="nav-links">
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Portfolio</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-    <div class="nav-mobile">
-      <div class="line1"> </div>
-      <div class="line2"> </div>
-      <div class="line3"> </div>  
-    </div>
-  </nav>
-
-    <section id="featured-work">
-      <ul>
-        <li id="portfolio-item" style="background-color: blue;"></li>
-        <li id="portfolio-item" style="background-color: red;"></li>
-        <li id="portfolio-item" style="background-color: green;"></li>
-        <li id="portfolio-item" style="background-color: yellow;"></li>
-        <li id="portfolio-item" style="background-color: orange;"></li>
-        <li id="portfolio-item" style="background-color: purple;"></li>
-        <li id="portfolio-item" style="background-color: pink;"></li>
-        <li id="portfolio-item" style="background-color: turquoise;"></li>
-        
-      </ul>
-      
-    </section>
-
-  <script src="assets/javascript/script.js"></script>
-</body>  
+    <footer>
+        <p id="copyright">
+            Footer
+        </p>
+    </footer>
+</body>
 </html>
-
-
-  
-                <!-- <a class="dropdown-item" href="rpg/index.html">Top Gun Game</a>
-                <a class="dropdown-item" href="dbz_gifs/index.html">DBZ Gifs</a>
-                <a class="dropdown-item" href="retro_hangman/index.html">Hangman</a> -->
- 

@@ -1,214 +1,433 @@
-@font-face {
-  font-family: nasaFont;
-  src: url(../images/nasalization-rg.ttf);
+#content {
+  min-height: 100vh;
+  margin: 0 auto -88px;
+  background-image: url("../images/galaxy.jpg");
 }
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+/* Returning the i tag to default after the reset.css file changed it. */
+i { 
+  font-style: italic;
 }
-nav{
-  display: flex;
-  justify-content: space-around; /*Centers items in the middle*/
-  align-items: center; /*Centers items verticaly*/
-  min-height: 8vh;
-  background-color: #121212;
-  font-family: 'Raleway', sans-serif;
-}
-.logo{
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #E5E5E5;
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-}
-.logo a{
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  color: #E5E5E5;
-  text-decoration: none;
-}
-.nav-links{
-  display: flex;
-  width: 30%;
-  justify-content: space-around;
-}
-.nav-links li{
-  list-style: none;
-}
-.nav-links a{
-  color: #E5E5E5;
-  text-decoration: none;
-  letter-spacing: 2px;
+/* Some basic definitions for headers on this site. */
+h1, h2 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
   font-weight: bold;
-  font-size: 16px;
-}
-.nav-mobile {
-  display: none;
-}
-.nav-mobile div{
-  width: 25px;
-  height: 5px;
-  background-color: #E5E5E5;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-body,
-html {
-  height: 100%;
+  color: whitesmoke;
+  border-bottom: 3px solid #dddddd;
 }
 
+h1 {
+  font-size: 2em;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  color: whitesmoke;;
+}
 
-
-
-#featured-work{
+h2 {
+  font-size: 1.3em;
+  padding-bottom: 25px;
+}
+/* The top bar header with navigation. */
+header {
   width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
-  background-color: #121212;
-  top: 8vh;
+  height: 80px;
+  background-color: rgb(32, 32, 32);
+  border-bottom: 4px solid #030303;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin-bottom: 40px;
 }
-#featured-work ul{
-  list-style: none;
-  display: block;
-  width: 100%;
-  height: 100%;
+
+header section {
+  width: 960px;
+  margin: 0 auto;
 }
-#featured-work li{
+
+#myName {
+  height: 80px;
+  padding: 0px 30px 0px 30px;
   float: left;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 50%;
-  height: 25%
-}
-.wrapper {
-    position: relative;
-    width: 400px;
-    height: 300px;
-}
-canvas{
-  position: absolute;
-  /* background: black; */
-  width: 100vw;
-  height: 95vh;
-
-}
-#particles-js {
-  background: black;
-  position: absolute;
-  width: 100vw;
-  height: 95vh;
-}
-#subtitle h2{
-  z-index: 10;
-  color: white;
-  
-}
-footer {
-
-  display: flex;
-  justify-content: space-around; /*Centers items in the middle*/
-  align-items: center; /*Centers items verticaly*/
-  
-  background-color: #121212;
-  font-family: 'Raleway', sans-serif;
-
-
-
-  display: flex;
-  justify-content: space-around; /*Centers items in the middle*/
-  align-items: center; /*Centers items verticaly*/
-  position: absolute;
-  top: 95vh;
-  height: 5vh;
-  width: 100vw; 
-  font-family: nasaFont;
-  background-color: black;
-  text-decoration: uppercase;
-  width: 100%
-
-}
-.footer-links {
-  width: 100%;
-  text-align: justify;
+  line-height: 80px;
+  background-color: #aa784a;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
-.footer-links a{
+nav {
+  height: 100%;
+  float: right;
+}
+
+.navButton {
+  display: inline-block;
+  height: 100%;
+  line-height: 80px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.navButton a {
+  padding: 0px 30px 0px 30px;
+  color: #999999;
   text-decoration: none;
-  color: #E5E5E5;
-  font-size: 20px;
-  text-transform: uppercase;
-  width: 33%
 }
-@media screen and (min-width: 1024px){
-  #featured-work li{
+/* The small vertical line separating the nav buttons. */
+#portButton a {
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+}
+/* Sets the width and centers all the content below the header. */
+#bodyContent {
+  width: 960px;
+  margin: 0 auto;
+}
+/* Allows the body content section to grow with the main content section. */
+#bodyContent::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Content displayed in the main box to the left of the screen. */
+#mainContent {
+  border-radius: 25px;
+  width: 590px;
+  padding: 40px 30px 40px 30px;
+  margin-bottom: 50px;
+  background-color: #333333;
   float: left;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 33.3%;
-  height: 25%;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: 1.2em;
+  line-height: 2em;
 }
-/* .nav-links{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-  } */
+/* The following styles are specific to the about me page */
+#mainContent p {
+  margin: 16px 0px 16px 0px;
+  text-indent: 30px;
+}
+
+#profilePic {
+  width: 240px;
+  height: 240px;
+  float: left;
+  margin: 0px 20px 10px 0px;
+}
+
+/* The following styles are specific to the portfolio page */
+.thumbnail {
+  position: relative;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: all .8s ease;
+}
+/* Make thumbnail larger when hovered. */
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+/* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
+.thumbnail img {
+  max-width: 225px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/* The label on the image. */
+.label {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background-color: #aa784a;
+}
+/* The following styles are specific to the contact us page */
+textarea {
+  resize: none;
+  width: calc(100% - 20px);
+  font-size: 1em;
+  padding: 5px 5px 5px 15px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 5px 5px 5px 15px;
+  font-size: .8em;
+}
+
+#submitButton {
+  background-color: #aa784a;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  width: auto;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+}
+/* The following styles are for the sidebar on the right that is on all pages. */
+#sideBar {
+  color: whitesmoke;
+  border-radius: 25px;
+  width: 210px;
+  padding: 40px 30px 40px 30px;
+  background-color: #333333;
+  float: right;
+}
+
+#sideBar a {
+  text-decoration: none;
+}
+/* Styles for the social icons link with opacity transition animation. */
+.socialIcon {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  color:whitesmoke;
+  
 }
 
 
-
-@media screen and (max-width: 760px){
-  body{
-    overflow-x: hidden;
-  }
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 100%;
-    top: 8vh;
-    background-color: #121212;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-  .nav-links li{
-    opacity: 0;
-  }
-  .nav-mobile{
-    display: block;
-    cursor: pointer;
-  }
-}
-.nav-active{
-  transform: translateX(0%);
-}
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
+.socialIcon div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
 }
 
-.toggle .line1{
-  transform: rotate(-45deg) translate(-6px,6px);
-}
 
-.toggle .line2{
-  /* transform: rotate(-45deg translate(-5px,0px)); */
+#stackIconBlack:hover {
   opacity: 0;
 }
+/* Height of the footer and height of the blank div that is added to the body to stop the footer from overlapping body content. */
+footer, .push {
+  height: 80px;
+}
 
-.toggle .line3{
-  transform: rotate(45deg) translate(-6px,-6px);
+footer {
+  background-color: #666666;
+  border-top: 8px solid #aa784a;
+  line-height: 80px;
+  color: #CCCCCC;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  header section {
+      width: 720px;
+      margin: 0 auto;
+  }
+  
+  .navButton a {
+      padding: 0px 15px 0px 15px;
+      color: #999999;
+      text-decoration: none;
+  }
+
+  #bodyContent {
+      width: 720px;
+      margin: 0 auto;
+  }
+
+  #mainContent {
+      width: 380px;
+      padding: 40px 30px 40px 30px;
+      margin-bottom: 50px;
+      background-color: #333333;;
+      float: left;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #777777;
+      font-size: 1.2em;
+      line-height: 2em;
+  }
+  /* For the home page */
+
+  /* For the portfolio page */
+  .thumbnail {
+      position: relative;
+      margin-bottom: 40px;
+      cursor: pointer;
+      transition: all .8s ease;
+  }
+
+  .thumbnail img {
+      max-width: 380px;
+  }
+  
+  .left {
+      float: none;
+  }
+  
+  .right {
+      float: none;
+  }
+
+  #middleIcon {
+      margin: 0px 6px 0px 6px;
+  }
+
+  #sideBar {
+      width: 200px;
+      padding: 40px 20px 40px 20px;
+      background-color: #333333;
+      float: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  header section {
+      width: 600px;
+      margin: 0 auto;
+  }
+  
+  .navButton a {
+      padding: 0px 5px 0px 5px;
+      color: #999999;
+      text-decoration: none;
+  }
+
+  #bodyContent {
+      width: 600px;
+      margin: 0 auto;
+  }
+
+  #mainContent {
+      width: 540px;
+      padding: 40px 30px 40px 30px;
+      margin-bottom: 50px;
+      background-color: #333333;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #777777;
+      font-size: 1.2em;
+      line-height: 2em;
+  }
+  
+  #profilePic {
+      width: 240px;
+      height: 240px;
+      float: left;
+      margin: 0px 20px 10px 0px;
+  }
+
+  .thumbnail {
+      position: relative;
+      margin-bottom: 40px;
+      cursor: pointer;
+      transition: all .8s ease;
+  }
+
+  .thumbnail img {
+      max-width: 250px;
+  }
+
+  .left {
+      float: left;
+  }
+
+  .right {
+      float: right;
+  }
+
+  #middleIcon {
+      margin: 0px 10px 0px 10px;
+  }
+
+  #sideBar {
+      width: 560px;
+      margin-bottom: 50px;
+      padding: 40px 20px 40px 20px;
+      background-color: #333333;
+      box-shadow: 4px 4px 15px 2px #333333;
+  }
+}
+@media screen and (max-width: 640px) {
+  header section {
+      width: 100%;
+  }
+
+  #myName {
+      width: 100%;
+  }
+
+  nav {
+      width: 100%;
+      background-color: #333333
+      margin-bottom: 40px;
+  }
+
+  .navButton {
+      width: 33.33%;
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      text-align: center;
+      font-size: 1.1em;
+  }
+  
+  .navButton a {
+      color: #999999;
+      text-decoration: none;
+  }
+
+  #portButton a {
+      border: none;
+  }
+
+  #bodyContent {
+      width: 100%;
+  }
+
+  #mainContent {
+      width: calc(100% - 120px);
+      padding: 40px 30px 40px 30px;
+      margin: 0px 0px 50px 30px;
+      background-color: #333333;
+
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+      font-size: 1.2em;
+      line-height: 2em;
+  }
+
+  .thumbnail {
+      position: relative;
+      margin-bottom: 40px;
+      cursor: pointer;
+      transition: all .8s ease;
+  }
+
+  .thumbnail img {
+      max-width: 100%;
+  }
+  
+  .left {
+      float: none;
+  }
+  
+  .right {
+      float: none;
+  }
+
+  #middleIcon {
+      margin: 0px 10px 0px 10px;
+  }
+
+  #sideBar {
+      width: calc(100% - 100px);
+      margin: 0px 0px 50px 30px;
+      padding: 40px 20px 40px 20px;
+      background-color: #333333;
+      box-shadow: 4px 4px 15px 2px #333333;
+      float: left;
+  }

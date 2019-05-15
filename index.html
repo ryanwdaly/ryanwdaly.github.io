@@ -1,72 +1,54 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="assets/images/favicon.png" hype="image/x-icon">
-  <title>Portfolio | Ryan Daly</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Ryan Daly's Portfolio Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <!-- Navbar -->
-  <!-- <nav>
-    <div class="logo">
-      <h4>Ryan W Daly</h4>
+    <!-- The entire content of the site except for the sticky footer -->
+    <div id="content">
+        <header>
+            <section>
+                <div id="myName">
+                    Ryan Daly
+                </div>
+                <nav>
+                    <div id="aboutButton" class="navButton">
+                        <a href="index.html">About</a>
+                    </div>
+                    <div id="portButton" class="navButton">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div id="contactButton" class="navButton">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <div id="bodyContent">
+            <section id="mainContent">
+                <h1>About Me</h1>
+                <p>Hello, My name is Ryan Daly, and I'm a aspiring web developer and avid hiker, skier, surfer and runner</p>
+
+                <p>Experience: Javascript, Node, HTML, CSS, SQL, React, as well as ruby</p>
+            </section>
+            <section id="sideBar">
+                <h2>Connect With Me</h2>
+                <h2><a href="https://github.com/ryanwdaly" class="socialIcon">Github</a></h2>
+                <h2><a id="middleIcon" href="https://www.linkedin.com/feed/?trk=hb_signin"  class="socialIcon">Linked In</a></h2>
+            </section>
+        </div>
+        <!-- This is a blank div that is given the same height as the footer. This makes the body long enough to add in a footer without it overlapping content in the body. -->
+        <div class="push"></div>
     </div>
-    <ul class="nav-links">
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="./portfolio.html">Portfolio</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-    <div class="nav-mobile">
-      <div class="line1"> </div>
-      <div class="line2"> </div>
-      <div class="line3"> </div>
-    </div>
-  </nav> -->
-
-  <div class="wrapper">
-    <div id="particles-js"></div>
-    <canvas id="scene"></canvas>
-  </div>
-
-  <!-- <h2 id="subtitle">Fullstack Developer</h2>  -->
-  <footer>
-    <ul class="footer-links">
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="./portfolio.html">Portfolio</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-
-  </footer>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', './assets/particles.json', function(){
-      console.log('particles.json loaded...');
-    });
-    </script>
-    <!-- <script src="barba.min.js" type="text/javascript"></script>
-    <script src="barba.transitions.min.js" type="text/javascript"></script> -->
-    <script src="assets/javascript/script.js"></script>
+    <footer>
+        <p id="copyright">
+            Footer
+        </p>
+    </footer>
 </body>
-
 </html>
